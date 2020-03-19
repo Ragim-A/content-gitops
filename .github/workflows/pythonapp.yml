@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.ragimabdullayev }}" | docker login --username=ragimabdullayev --password=${{ secrets.ragimabdullayev }}
-        docker image build -t Ragim-A/gitops:hellov1.2 .
-        docker push Ragim-A/gitops:hellov1.2
+        docker image build -t ragimabdullayev/gitops:hellov1.2 .
+        docker push ragimabdullayev/gitops:hellov1.2
